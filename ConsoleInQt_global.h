@@ -1,0 +1,12 @@
+#ifndef CONSOLEINQT_GLOBAL_H
+#define CONSOLEINQT_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CONSOLEINQT_LIBRARY)
+#  define CONSOLEINQT_EXPORT Q_DECL_EXPORT
+#else
+#  define CONSOLEINQT_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CONSOLEINQT_GLOBAL_H

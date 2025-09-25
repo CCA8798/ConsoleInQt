@@ -1,0 +1,38 @@
+cmake_minimum_required(VERSION 3.5)
+
+message(${PROJECT_SOURCE_DIR}/../MINGW64_MINSIZERELEASE)
+
+project(ConsoleInQt LANGUAGES CXX)
+
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/../MINGW64_MINSIZERELEASE)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/../MINGW64_MINSIZERELEASE)
+set(CMAKE_BINARY_DIR ${PROJECT_SOURCE_DIR}/../MINGW64_MINSIZERELEASE)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/../MINGW64_MINSIZERELEASE)
+
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_PREFIX_PATH "F:/Software/Qt5/Qt5.14.2/5.14.2/mingw73_64")
+
+
+find_package(Qt5 COMPONENTS Widgets REQUIRED)
+
+add_library(ConsoleInQt SHARED
+  ConsoleInQt_global.h
+  Console.cpp
+  Console.h
+)
+
+target_link_libraries(ConsoleInQt PRIVATE Qt5::Widgets)
+
+target_compile_definitions(ConsoleInQt PRIVATE CONSOLEINQT_LIBRARY)
+set(MY_CUSTOM_COMMAND "${CMAKE_BINARY_DIR}/copy.bat")
+message("Executing COPYING: ${MY_CUSTOM_COMMAND}")
+## 添加自定义命令，在编译完成后执行
+add_custom_command(
+    TARGET ConsoleInQt POST_BUILD
+    COMMAND ${MY_CUSTOM_COMMAND}
+    COMMENT "Copying include files after build")
