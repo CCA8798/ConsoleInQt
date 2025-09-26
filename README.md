@@ -155,4 +155,5 @@ Console 类通过信号对外传递用户输入的命令，支持三种参数类
 2. 动态调整窗口大小时，控制台内容会自动适配（通过重写 `resizeEvent` 实现）
 3. Debug 版本产物含调试信息，体积较大；Release 版本经过优化，适合部署使用
 4. 若需添加命令历史记录、语法高亮等功能，可基于现有代码扩展 `Console` 类
+
 *Note: This project is still in development. Contributions and feedback are welcome!*
