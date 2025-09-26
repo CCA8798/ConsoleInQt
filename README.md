@@ -132,13 +132,6 @@ Console 类通过信号对外传递用户输入的命令，支持三种参数类
 - **构建类型**：Debug（调试版，含调试信息）、Release（发布版，优化大小/性能）
 - **输出产物**：动态链接库（`.dll`）、导入库（`.lib`，MSVC 环境）、头文件（`.h`）
 
-### 编译说明
-若使用提供的 GitHub Actions 脚本，可自动构建 4 个版本的产物：
-- MinGW 7.3 - Debug
-- MinGW 7.3 - Release
-- MSVC 2019 - Debug
-- MSVC 2019 - Release
-
 ## 许可证
 
 本项目采用 **MIT 许可证** 开源，允许个人/商业使用、修改、分发，无需支付授权费用，详情见 [LICENSE](LICENSE) 文件。
