@@ -1,6 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
-
-message(${PROJECT_SOURCE_DIR}/../MINGW64_MINSIZERELEASE)
+cmake_minimum_required(VERSION 3.10)
 
 project(ConsoleInQt LANGUAGES CXX)
 
@@ -15,6 +13,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
 set(CMAKE_PREFIX_PATH "F:/Software/Qt5/Qt5.14.2/5.14.2/mingw73_64")
 
 
@@ -30,8 +29,7 @@ target_link_libraries(ConsoleInQt PRIVATE Qt5::Widgets)
 
 target_compile_definitions(ConsoleInQt PRIVATE CONSOLEINQT_LIBRARY)
 set(MY_CUSTOM_COMMAND "${CMAKE_BINARY_DIR}/copy.bat")
-message("Executing COPYING: ${MY_CUSTOM_COMMAND}")
-## 添加自定义命令，在编译完成后执行
+#message("Executing COPYING: ${MY_CUSTOM_COMMAND}")
 add_custom_command(
     TARGET ConsoleInQt POST_BUILD
     COMMAND ${MY_CUSTOM_COMMAND}
