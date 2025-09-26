@@ -1,7 +1,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Build System](https://img.shields.io/badge/Build-CMake-blue)](https://cmake.org)
 [![Qt Version](https://img.shields.io/badge/Qt_Version->=5.12-green)](https://www.qt.io/download)
-[![C++ Version](https://img.shields.io/badge/C++_Version->=C++17-green)](https://cppreference.com)
+[![C++ Standard](https://img.shields.io/badge/C++_Standard->=C++17-green)](https://cppreference.com)
 # ConsoleInQt
 
 一个轻量级、可自定义的 Qt 应用程序控制台组件，旨在模拟类 Shell 交互体验，支持多种输入/输出数据类型。
