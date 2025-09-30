@@ -2,6 +2,7 @@
 [![Build System](https://img.shields.io/badge/Build-CMake-blue)](https://cmake.org)
 [![Qt Version](https://img.shields.io/badge/Qt_Version->=5.12-green)](https://www.qt.io/download)
 [![C++ Standard](https://img.shields.io/badge/C++_Standard->=C++17-green)](https://cppreference.com)
+# ConsoleInQt
 
 ***本项目的Readme.md大部分由AI生成，仅作者在必要部分加以修改（如注意事项部分）** *
 
