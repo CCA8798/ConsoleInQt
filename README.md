@@ -2,6 +2,7 @@
 [![Build System](https://img.shields.io/badge/Build-CMake-blue)](https://cmake.org)
 [![Qt Version](https://img.shields.io/badge/Qt_Version->=5.12-green)](https://www.qt.io/download)
 [![C++ Standard](https://img.shields.io/badge/C++_Standard->=C++17-green)](https://cppreference.com)
+
 # ConsoleInQt
 
 ***本项目的Readme.md大部分由AI生成，仅作者在必要部分加以修改（如注意事项部分）** *
@@ -145,9 +146,9 @@ console->refreshAllStyleSheet(config);
 | `setTextSize`        | 设置字体大小（px）         | `"20"`    |
 | `getCurrentConfig`   | 获取当前配置（生成样式表） | -           |
 
-接口
+## 接口
 
-## 1. Config 类（配置管理类）
+### 1. Config 类（配置管理类）
 
 **描述**：继承自 `QObject`，用于管理控制台的样式（如背景色、文本色）和行为（如欢迎消息）。
 
