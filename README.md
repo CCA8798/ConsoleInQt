@@ -46,7 +46,7 @@
 
 ### 依赖项
 
-- **Qt**：5.15或更高版本（需包含 `Widgets`模块）。
+- **Qt**：Qt5或更高版本（需包含 `Widgets`模块）。
 - **C++编译器**：须>=C++17（如GCC 8+、Clang 6+、MSVC 2019+）。
 - **构建工具**：CMake 3.16或更高版本（推荐）。
 
@@ -324,7 +324,7 @@ This project is a **lightweight console component based on the Qt framework**, d
 
 ### Dependencies
 
-- **Qt**: Version 5.15 or higher (requires the `Widgets` module).
+- **Qt**: Qt5 or higher (requires the `Widgets` module).
 - **C++ Compiler**: C++17 or later (e.g., GCC 8+, Clang 6+, MSVC 2019+).
 - **Build Tool**: CMake 3.16 or higher (recommended).
 
